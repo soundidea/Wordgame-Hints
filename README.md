@@ -12,18 +12,24 @@ A quick & dirty command-line tool for generating solutions for Alphabear puzzles
 ## Examples
 Let's say your board looks like this iTunes screenshot:
 
-![Alphabear screenshot](http://a2.mzstatic.com/us/r30/Purple5/v4/0d/8f/33/0d8f3362-ec3f-bd50-31bb-0be7c4718a23/screen322x572.jpeg)
+<img src='http://a2.mzstatic.com/us/r30/Purple5/v4/0d/8f/33/0d8f3362-ec3f-bd50-31bb-0be7c4718a23/screen322x572.jpeg' width='50%'>
 ```
 $ python bearsolver.py --words=/usr/share/dict/words --letters=hetetlelachahcates
-['castellate', 'catalecta', 'catastate', 'Chaetetes', 'Chechehet', 'echelette', 'Hallstatt', 'saltcatch', 'teethache', 'aesthete', 'asellate', 'Athecata', 'athecate', 'Cactales', 'Calathea', 'castelet', 'catalase', ...
+['castellate', 'catalecta', 'catastate', 'Chaetetes', 'Chechehet', 'echelette', 
+'Hallstatt', 'saltcatch', 'teethache', 'aesthete', 'asellate', 'Athecata', 'athe
+cate', 'Cactales', 'Calathea', 'castelet', 'catalase', ...
 ```
 
 Or this one:
 
-![Alphabear screenshot](http://a4.mzstatic.com/us/r30/Purple7/v4/ae/4c/8b/ae4c8bbc-910d-cca6-ab70-e4bfb9cb2947/screen322x572.jpeg)
+<img src='http://a4.mzstatic.com/us/r30/Purple7/v4/ae/4c/8b/ae4c8bbc-910d-cca6-ab70-e4bfb9cb2947/screen322x572.jpeg' width='50%'>
 ```
-$ python bearsolver.py --words=/usr/share/dict/words --letters=fwnokeiwahfiss --must_have=kno --nice_to_have=fwe
-['knowe', 'kenosis', 'Kossean', 'Nesokia', 'Kiowan', 'soaken', 'Wikeno', 'Kohen', 'Koine', 'koine', 'oaken', 'snoek', 'snoke', 'snowk', 'soken', 'wakon', 'keno', 'know', 'Wishoskan', 'hinoki', 'inkosi', 'kishon', 'Hokan', 'ikona', 'Konia', 'kosin', 'honk', 'kino', 'kona', 'nako', 'sonk', 'kon']
+$ python bearsolver.py --words=/usr/share/dict/words --letters=fwnokeiwahfiss --
+must_have=kno --nice_to_have=fwe
+['knowe', 'kenosis', 'Kossean', 'Nesokia', 'Kiowan', 'soaken', 'Wikeno', 'Kohen'
+, 'Koine', 'koine', 'oaken', 'snoek', 'snoke', 'snowk', 'soken', 'wakon', 'keno'
+, 'know', 'Wishoskan', 'hinoki', 'inkosi', 'kishon', 'Hokan', 'ikona', 'Konia', 
+'kosin', 'honk', 'kino', 'kona', 'nako', 'sonk', 'kon']
 ```
 
 I'm sure you get the idea.
