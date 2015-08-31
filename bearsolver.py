@@ -13,7 +13,8 @@ def solve(words, letters, must_have, nice_to_have):
   matches = sorted(filter(word_filter, words), key=len, reverse=True)
   if (nice_to_have):
     nthc = Counter(nice_to_have)
-    matches = sorted(matches, key=lambda w: sum(((Counter(w) - mhc) & nthc).values()), reverse=True)
+    matches = sorted(matches,
+      key=lambda w: sum(((Counter(w) - mhc) & nthc).values()), reverse=True)
   return matches
 
 def process_args(argv):
@@ -25,8 +26,9 @@ def process_args(argv):
   parser.add_argument('--must_have', metavar='ABC',
     help='Letters that must be used.')
   parser.add_argument('--nice_to_have', metavar='ABC',
-    help='Letters that we\'d like to include. If this is present, the results are sorted to '
-    'prioritize words containing the greatest number of these letters.')
+    help='Letters that we\'d like to include. If this is present, the results '
+    'are sorted to prioritize words containing the greatest number of these '
+    'letters.')
   args = parser.parse_args(argv)
   with open(args.words, 'r') as wordfile:
     words = wordfile.read().splitlines()
@@ -36,9 +38,7 @@ def process_args(argv):
     if lc & mhc != mhc:
       raise ValueError(
         'All characters in --must_have must be present in --letters.')
-    lc = lc - mhc
-  return (
-    words,
+  return (words,
     args.letters.lower(),
     args.must_have.lower() if args.must_have else None,
     args.nice_to_have.lower() if args.nice_to_have else None)
