@@ -12,7 +12,7 @@ A quick & dirty command-line tool for generating solutions for Alphabear puzzles
 ## Examples
 Let's say your board looks like this iTunes screenshot:
 
-<img src='http://a2.mzstatic.com/us/r30/Purple5/v4/0d/8f/33/0d8f3362-ec3f-bd50-31bb-0be7c4718a23/screen322x572.jpeg' style='width:161px;'>
+![]('http://a2.mzstatic.com/us/r30/Purple5/v4/0d/8f/33/0d8f3362-ec3f-bd50-31bb-0be7c4718a23/screen322x572.jpeg')
 ```
 $ python bearsolver.py --words=/usr/share/dict/words --letters=hetetlelachahcates
 ['castellate', 'catalecta', 'catastate', 'Chaetetes', 'Chechehet', 'echelette', 
@@ -22,7 +22,7 @@ cate', 'Cactales', 'Calathea', 'castelet', 'catalase', ...
 
 Or this one:
 
-<img src='http://a4.mzstatic.com/us/r30/Purple7/v4/ae/4c/8b/ae4c8bbc-910d-cca6-ab70-e4bfb9cb2947/screen322x572.jpeg' style='161px'>
+![]('http://a4.mzstatic.com/us/r30/Purple7/v4/ae/4c/8b/ae4c8bbc-910d-cca6-ab70-e4bfb9cb2947/screen322x572.jpeg')
 ```
 $ python bearsolver.py --words=/usr/share/dict/words --letters=fwnokeiwahfiss --
 must_have=kno --nice_to_have=fwe
