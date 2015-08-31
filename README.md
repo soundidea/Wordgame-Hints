@@ -34,3 +34,7 @@ must_have=kno --nice_to_have=fwe
 
 I'm sure you get the idea.
 
+## Sort order of results
+Results are sorted in decreasing order of size. If --nice_to_have is specified, then they are then sorted again in decreasing order of how many nice-to-have letters are in the word.
+
+You won't always want to choose the first word in the list. Alphabear might not recognize it, or it might be strategically unwise for you to use that word, say if it's going to reveal too many 1-point skull-and-crossbones tiles on the next round, or you're trying to finish a game and you'd be left with a few tiles that don't spell any words.
